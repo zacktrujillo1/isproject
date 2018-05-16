@@ -50,9 +50,6 @@ const mongoose = require("mongoose");
 const user = process.env.MDB_USER;
 const passwd = process.env.MDB_PASSWORD;
 
-const port = process.env.PORT || DEFAULT_PORT
-app.listen(port)
-
 mongoose
   .connect(`mongodb://${user}:${passwd}@ds145039.mlab.com:45039/is445zt`)
   .then(() => console.log("connection successful"))
